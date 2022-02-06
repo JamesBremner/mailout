@@ -1,15 +1,9 @@
 #ifndef CREDENTIAL_H
 #define CREDENTIAL_H
 
-#ifdef _WIN32
-	#ifdef SMTPCLIENT_EXPORTS  
-		#define CREDENTIAL_API __declspec(dllexport)   
-	#else  
-		#define CREDENTIAL_API __declspec(dllimport)   
-	#endif  
-#else
+
 	#define CREDENTIAL_API
-#endif
+
 
 namespace jed_utils
 {

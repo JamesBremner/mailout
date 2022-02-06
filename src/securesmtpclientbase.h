@@ -4,15 +4,9 @@
 #include "smtpclientbase.h"
 #include <openssl/ssl.h>
 
-#ifdef _WIN32
-	#ifdef SMTPCLIENT_EXPORTS  
-		#define SECURESMTPCLIENTBASE_API __declspec(dllexport)   
-	#else  
-		#define SECURESMTPCLIENTBASE_API __declspec(dllimport)   
-	#endif  
-#else
+
 	#define SECURESMTPCLIENTBASE_API
-#endif
+
 
 namespace jed_utils
 {

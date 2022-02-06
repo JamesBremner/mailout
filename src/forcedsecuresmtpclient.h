@@ -3,15 +3,9 @@
 
 #include "securesmtpclientbase.h"
 
-#ifdef _WIN32
-	#ifdef SMTPCLIENT_EXPORTS  
-		#define FORCEDSECURESMTPCLIENT_API __declspec(dllexport)   
-	#else  
-		#define FORCEDSECURESMTPCLIENT_API __declspec(dllimport)   
-	#endif  
-#else
+
 	#define FORCEDSECURESMTPCLIENT_API
-#endif
+
 
 namespace jed_utils
 {

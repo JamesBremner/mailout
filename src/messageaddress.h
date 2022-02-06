@@ -6,15 +6,8 @@
 
 #pragma once  
 
-#ifdef _WIN32
-	#ifdef SMTPCLIENT_EXPORTS  
-		#define MESSAGEADDRESS_API __declspec(dllexport)   
-	#else  
-		#define MESSAGEADDRESS_API __declspec(dllimport)   
-	#endif 
-#else
 	#define MESSAGEADDRESS_API
-#endif
+
 
 namespace jed_utils
 {

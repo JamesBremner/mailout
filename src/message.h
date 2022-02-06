@@ -6,15 +6,8 @@
 #include <cstring>
 #include <vector>
 
-#ifdef _WIN32
-	#ifdef SMTPCLIENT_EXPORTS  
-		#define MESSAGE_API __declspec(dllexport)   
-	#else  
-		#define MESSAGE_API __declspec(dllimport)   
-	#endif
-#else
-	#define MESSAGE_API
-#endif
+	#define MESSAGE_API 
+
 
 namespace jed_utils
 {

@@ -2,28 +2,38 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "mailout",
             "type": "shell",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "options": {
-                "cwd": "${workspaceFolder}/build"
-            },
-            "command": "cmake",
+                "cwd": "${workspaceFolder}"
+               },
+            "command": "mingw32-make.exe",
             "args": [
-                "--build",
-                "${workspaceFolder}/build",
-                "--config",
-                "Debug",
-                "--target",
-                "all", 
-                "--", 
-                "-j", 
-                "10"
-            ],
-            "problemMatcher": []
+                "-f",
+                ".vscode/makefile.mk",
+                "mailout"
+            ]
+        }
+        {
+            "label": "clean",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+               },
+            "command": "mingw32-make.exe",
+            "args": [
+                "-f",
+                ".vscode/makefile.mk",
+                "clean"
+            ]
         }
     ]
 }

@@ -3,15 +3,8 @@
 
 #include <string>
 
-#ifdef _WIN32
-	#ifdef SMTPCLIENT_EXPORTS  
-		#define STRINGUTILS_API __declspec(dllexport)   
-	#else  
-		#define STRINGUTILS_API __declspec(dllimport)   
-	#endif  
-#else
 	#define STRINGUTILS_API
-#endif
+
 
 namespace jed_utils
 {

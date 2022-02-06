@@ -5,15 +5,9 @@
 #include <cstring>
 #include <fstream>
 
-#ifdef _WIN32
-	#ifdef SMTPCLIENT_EXPORTS  
-		#define ATTACHMENT_API __declspec(dllexport)   
-	#else  
-		#define ATTACHMENT_API __declspec(dllimport)   
-	#endif
-#else
+
 	#define ATTACHMENT_API
-#endif
+
 
 namespace jed_utils
 {

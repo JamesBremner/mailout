@@ -10,15 +10,9 @@
 #include <tuple>
 #include <vector>
 
-#ifdef _WIN32
-	#ifdef SMTPCLIENT_EXPORTS  
-		#define SMTPCLIENTBASE_API __declspec(dllexport)   
-	#else  
-		#define SMTPCLIENTBASE_API __declspec(dllimport)   
-	#endif  
-#else
+
 	#define SMTPCLIENTBASE_API
-#endif
+
 
 /** The max length of the communication log */
 #define COMMUNICATIONLOG_LENGTH			4096
