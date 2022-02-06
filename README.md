@@ -1,52 +1,11 @@
-# Jed# C++ SMTP Client Library
+# C++ SMTP Client Library
 
-## A simple SMTP client library built in C++ that support authentication and secure connections (Forced SSL and Opportunistic SSL/TLS encryption).
-##### For TLS 1.3 support you must build the library against OpenSSL 1.1.1
-<br/>
+ A simple SMTP client library built in C++ that support authentication and secure connections (Forced SSL and Opportunistic SSL/TLS encryption).
+ For TLS 1.3 support you must build the library against OpenSSL 1.1.1
 
-### The library is cross-platform and has been tested on Linux and Windows.
-\
-\### How to build the SMTP client or integrate it in your application
+### Build for Windows
 
-Follow this [link](https://github.com/jeremydumais/CPP-SMTPClient-library/wiki/How-to-build-the-SMTP-client-or-integrate-it-in-your-application) for a quick guide on how to build the SMTP client and integrate it in your application.
-
-#
-## Download latest binaries
-
-### Windows
-
-<table>
-<tr>
-<th> Release </th>
-<th> MD5 hash of smtpclient.dll </th>
-</tr>
-<tr>
-<td>
-
-[v1.1.4 (x64)](https://github.com/jeremydumais/CPP-SMTPClient-library/releases/download/v1.1.4/CPP-SMTPClient-Library.1.1.4.x64.zip)
-
-</td>
-<td>
-
-c0c50a722e02dba488d6440ede046976
-
-</td>
-</tr>
-<tr>
-<td>
-
-[v1.1.4 (x86)](https://github.com/jeremydumais/CPP-SMTPClient-library/releases/download/v1.1.4/CPP-SMTPClient-Library.1.1.4.x86.zip)
-
-</td>
-<td>
-
-dce3b4c0704c8aafd4b2c5e8fdd3a701
-
-</td>
-</tr>
-</table>
-
-See the section [Releases](https://github.com/jeremydumais/CPP-SMTPClient-library/releases) for previous versions.
+Run .vscode makefile.mk
 
 # 
 ## The 3 client classes
